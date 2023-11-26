@@ -23,12 +23,7 @@ if (data) {
   console.log(allData);
 }
 
-
-function getTaskLen(){
-
-}
-
-
+function getTaskLen() {}
 </script>
 
 <template>
@@ -67,7 +62,7 @@ function getTaskLen(){
       </button>
     </div>
 
-    <FormsCreateCategory :uid="user.id"/>
+    <FormsCreateCategory :uid="user.id"   />
     {{ console.log(data) }}
   </div>
 </template>

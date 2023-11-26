@@ -4,20 +4,21 @@
       class="bg-white border-gray-200 z-10 dark:bg-gray-900 fixed top-0 w-screen"
     >
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
       >
         <a
           href="https://flowbite.com/"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
+            src="img/logo.jpeg"
+            class="h-12"
             alt="Flowbite Logo"
+            style="mix-blend-mode: screen"
           />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Flowbite</span
+            >Todo Dheep</span
           >
         </a>
         <button
@@ -51,8 +52,7 @@
             <li>
               <NuxtLink
                 to="/"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 >Home</NuxtLink
               >
             </li>
@@ -76,3 +76,8 @@
     </nav>
   </header>
 </template>
+<style>
+.router-link-exact-active {
+  color: cyan;
+}
+</style>

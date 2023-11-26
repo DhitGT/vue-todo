@@ -27,6 +27,10 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css",
         },
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css",
+        },
       ],
     };
   },

@@ -23,6 +23,9 @@ dependencies:
   flowbite:
     specifier: ^2.2.0
     version: 2.2.0
+  remixicon:
+    specifier: ^3.5.0
+    version: 3.5.0
 
 devDependencies:
   '@nuxt/devtools':
@@ -5666,6 +5669,10 @@ packages:
     dependencies:
       redis-errors: 1.2.0
     dev: true
+
+  /remixicon@3.5.0:
+    resolution: {integrity: sha512-wNzWGKf4frb3tEmgvP5shry0n1OdTjjEk9RHLuRuAhfA50bvEdpKH1XWNUYrHUSjAQQkkdyIm+lf4mOuysIKTQ==}
+    dev: false
 
   /replace-in-file@6.3.5:
     resolution: {integrity: sha512-arB9d3ENdKva2fxRnSjwBEXfK1npgyci7ZZuwysgAp7ORjHSyxz6oqIjTEv8R0Ydl4Ll7uOAZXL4vbkhGIizCg==}
