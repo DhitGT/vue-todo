@@ -56,7 +56,7 @@
       <div class="flex flex-col items-center pb-10">
         <img
           class="w-24 h-24 mb-3 rounded-full shadow-lg"
-          src="img/me.jpeg"
+          src="/img/me.jpeg"
           alt="Bonnie image"
           style="aspect-ratio: 1/1"
         />
