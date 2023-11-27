@@ -6,7 +6,7 @@
           <div class="mb-6 md:mb-0">
             <a href="https://flowbite.com/" class="flex items-center">
               <img
-                :src="/img/logo.jpeg"
+                src="img/logo.jpeg"
                 class="h-12"
                 alt="Flowbite Logo"
                 style="mix-blend-mode: screen"

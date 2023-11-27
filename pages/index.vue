@@ -37,7 +37,7 @@ function getTaskLen() {}
     {{ user.email }}
   </h4>
   <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-    At Here Are Your Tasks
+    At Here Are Your Lists
   </p>
 
   <h1 align="" class="text-3xl"></h1>
@@ -62,7 +62,7 @@ function getTaskLen() {}
       </button>
     </div>
 
-    <FormsCreateCategory :uid="user.id"   />
+    <FormsCreateCategory :uid="user.id" />
     {{ console.log(data) }}
   </div>
 </template>

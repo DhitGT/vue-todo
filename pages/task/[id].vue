@@ -2,7 +2,7 @@
 import { onMounted } from "vue";
 import { initFlowbite } from "flowbite";
 
-// initialize components based on data attribute selectors
+
 onMounted(() => {
   initFlowbite();
 });
@@ -27,11 +27,9 @@ if (user.value) {
     .eq("id", id)
     .eq("userid", user.value.id);
   if (!categoryData.data || categoryData.data.length === 0) {
-    // Redirect to a different route
-    router.push("/"); // Change '/' to the desired route
+    router.push("/"); 
 
-    // Optionally, you can throw an error as well
-    throw new Error("User not authorized to access this category.");
+    throw new Error("User not authorized to access this Tasks.");
   }
 }
 
@@ -42,9 +40,8 @@ console.log(categoryData);
 
 async function updateSupabaseRow(id, value) {
   try {
-    // Update the Supabase row with the new isChecked value
     const { data, error } = await supabase
-      .from("list") // Replace with your actual table name
+      .from("list")
       .update({ check: !value })
       .eq("id", id);
 
@@ -62,9 +59,9 @@ async function updateSupabaseRow(id, value) {
 
 async function deleteTask(id) {
   try {
-    // Update the Supabase row with the new isChecked value
+    
     const { data, error } = await supabase
-      .from("list") // Replace with your actual table name
+      .from("list")
       .delete()
       .eq("id", id);
 

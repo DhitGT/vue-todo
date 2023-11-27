@@ -11,7 +11,29 @@ const { baseUrl, apikey } = useAppConfig();
 const supabase = createClient(baseUrl, apikey);
 const user = useSupabaseUser();
 let datalist = null;
+const router = useRouter();
 let dataListDone = null;
+
+async function deleteCategory(ids) {
+  try {
+   
+    const { data, error } = await supabase
+      .from("category") 
+      .delete()
+      .eq("id", ids);
+
+    if (error) {
+      console.error("Error updating Supabase row:", error.message);
+    } else {
+      location.reload();
+
+      console.log("Supabase row updated successfully:", data);
+    }
+  } catch (error) {
+    console.error("Unexpected error:", error.message);
+  }
+}
+
 if (user.value) {
   datalist = await supabase
     .from("list")
@@ -23,7 +45,6 @@ if (user.value) {
     .eq("categoryid", props.data.id)
     .eq("check", true);
 }
-console.log(datalist);
 </script>
 
 <template>
@@ -130,5 +151,27 @@ console.log(datalist);
         />
       </svg>
     </NuxtLink>
+    <div class="mt-3">
+      <button
+        @click="deleteCategory(props.data.id)"
+        class="dark:text-blue-500 hover:underline"
+      >
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 18 20"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </template>

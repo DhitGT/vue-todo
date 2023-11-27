@@ -2,7 +2,9 @@
   <Header />
   <div class="container mx-auto pt-5">
     <Sidebar :datalen="0" />
-    <div class="ml-80 flex flex-col justify-center justify-items-center">
+    <div
+      class="sm:ml-80 sm:p-10 flex flex-col justify-center justify-items-center"
+    >
       <slot />
     </div>
   </div>
