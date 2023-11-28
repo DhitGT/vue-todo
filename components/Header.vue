@@ -11,7 +11,7 @@
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="img/logo.jpeg"
+            src="https://www.dheep.site/media/dheep-logo.jpeg"
             class="h-12"
             alt="Flowbite Logo"
             style="mix-blend-mode: screen"
