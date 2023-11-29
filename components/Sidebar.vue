@@ -122,6 +122,5 @@ if (user.value) {
 
 if (data) {
   allData = data.data;
-  console.log(allData);
 }
 </script>
