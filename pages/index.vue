@@ -20,7 +20,6 @@ if (user.value) {
 
 if (data) {
   allData = data.data;
-  console.log(allData);
 }
 
 function getTaskLen() {}
@@ -63,6 +62,5 @@ function getTaskLen() {}
     </div>
 
     <FormsCreateCategory :uid="user.id" />
-    {{ console.log(data) }}
   </div>
 </template>
